@@ -207,7 +207,8 @@ void MainWidget::resizeGL(int w, int h)
     projection.setToIdentity();
 
     // Set perspective projection
-    projection.perspective(fov, aspect, zNear, zFar);
+    //projection.perspective(fov, aspect, zNear, zFar);
+    projection.ortho(-3,3,-3,3,-10,10);
 }
 //! [5]
 
